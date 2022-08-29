@@ -32,7 +32,7 @@ def ai(question):
   
   possible_answers = []
   for conversation in conversations:
-    if string_similarity(question, conversation[0]) > 0.5:
+    if string_similarity(question, conversation[0]) > 0.6:
       possible_answers.append([string_similarity(question, conversation[0])] + conversation[1:])
   
   if not possible_answers:
