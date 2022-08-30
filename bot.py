@@ -53,6 +53,6 @@ class Bot():
       self.answer_question(qid)
       sleep(choice((5, 10, 15, 20, 25, 30)))
 
-bot = Bot('p7hs4xekrcuwd84lcv32sah3t0uq1bnw')
+bot = Bot(SESSIONID)
 bot.login()
 bot.continually_answer_questions()
